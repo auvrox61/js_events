@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1"><p class="txt">There is a button underneath</p></div>
+    <div id="div2"><button class="btn">Click me!</button></div>
+    <script>
+        let btn=document.querySelector(".btn");
+        btn.addEventListener("dblclick",()=>{
+            document.querySelector(".txt").innerHTML="<p>Yes! This button has been clicked </p>";
+        })
+    </script>
+</body>
+</html>
